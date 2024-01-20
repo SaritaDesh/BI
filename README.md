@@ -20,11 +20,11 @@ Calendar Table = ADDCOLUMNS(CALENDAR(MIN(Fact_transactions[purchase_date]),MAX(F
 
 **PM_Qnty** = CALCULATE([Total Quantity],DATEADD('Calendar Table'[Date],-1,MONTH))
 
-MOM Quantity = 
+**MOM Quantity** = 
     var mom = CALCULATE([Total Revenue],DATEADD('Calendar Table'[Date],-1,MONTH))
 RETURN
     DIVIDE(mom-[Total Revenue],mom,"null")
     
-Total Products = DISTINCTCOUNT(Fact_transactions[product_id])
-Total Revenue = SUM(Fact_transactions[RevenueT])
-Avg Qnty Sold = AVERAGE(Fact_transactions[quantity])
+**Total Products** = DISTINCTCOUNT(Fact_transactions[product_id])
+**Total Revenue** = SUM(Fact_transactions[RevenueT])
+**Avg Qnty Sold** = AVERAGE(Fact_transactions[quantity])
