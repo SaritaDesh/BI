@@ -9,7 +9,7 @@ Data Model:
 
 
 💻 Overview : Shows total products, total revenue, total quantity sold and total transactions.
-<img width="605" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/2fc5cb73-1b17-4860-a4d8-114e07fca3a0">
+<img width="608" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/c27be510-8327-41f0-8704-c702bd0958e1">
 
 💰 Revenue : Revenue shown over different months, campaign name, by categories and also MOM growth 📈 shown in KPI card.
 <img width="612" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/5ec91d7c-367a-4fbf-9135-54f08a0d8932">
@@ -18,7 +18,8 @@ Data Model:
 <img width="610" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/7c1ee2d8-3be6-42e1-b066-c987c0e53527">
 
 🕵‍♀️ RCA : Showing revenue distribution among the campaign-category-product name. 
-<img width="613" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/15ff8d6d-020f-4a93-85b7-73aa5de668f5">
+<img width="614" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/c9fdb183-bca1-49f9-98a6-d557179e8c23">
+
 
 Some of the Insights :
 ***** The October month has the highest sales of 1689.66
