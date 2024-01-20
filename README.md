@@ -1,30 +1,30 @@
-# BI
-Clothing Marketing which is analyzed in two parts Within-campaign and Outside-campaign.
+# Clothing Marketing Analysis
+Data is about the "Clothing Marketing" business provided with the main three tables.
+
+Data Model:
+<img width="743" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/2f5d2675-0d81-4128-a139-24ffc4be282a">
+
 
 👩‍💻 Created using Microsoft Power BI.
 
 
 💻 Overview : Shows total products, total revenue, total quantity sold and total transactions.
+<img width="605" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/2fc5cb73-1b17-4860-a4d8-114e07fca3a0">
+
 💰 Revenue : Revenue shown over different months, campaign name, by categories and also MOM growth 📈 shown in KPI card.
+<img width="612" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/5ec91d7c-367a-4fbf-9135-54f08a0d8932">
+
 👔 Product : Analysis is for product sold out in campaign, category and sub-category wise product, % contribution of each product in total revenue etc.
+<img width="610" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/7c1ee2d8-3be6-42e1-b066-c987c0e53527">
+
 🕵‍♀️ RCA : Showing revenue distribution among the campaign-category-product name. 
+<img width="613" alt="image" src="https://github.com/SaritaDesh/BI/assets/156910215/15ff8d6d-020f-4a93-85b7-73aa5de668f5">
 
-Some of the DAX I used in my report are,
+Some of the Insights :
+***** The October month has the highest sales of 1689.66
+***** Revenue generated Outside the campaign has more contribution to the total revenue.
+***** Category "Bottom" is the highest selling category where as "Swimwear" has less demand.		
+***** Size "M" is the most commonly sold size among all the size options .												
 
-Calendar Table = ADDCOLUMNS(CALENDAR(MIN(Fact_transactions[purchase_date]),MAX(Fact_transactions[purchase_date])),
-                          "Month Num",MONTH([Date]),
-                          "Month Name",FORMAT([Date],"mmm"),
-                          "Year",YEAR([Date]),
-                          "Quarter","Q "&QUARTER([Date]),
-                          "Day1", DAY([Date]))
 
-**PM_Qnty** = CALCULATE([Total Quantity],DATEADD('Calendar Table'[Date],-1,MONTH))
-
-**MOM Quantity** = 
-    var mom = CALCULATE([Total Revenue],DATEADD('Calendar Table'[Date],-1,MONTH))
-RETURN
-    DIVIDE(mom-[Total Revenue],mom,"null")
-    
-**Total Products** = DISTINCTCOUNT(Fact_transactions[product_id])
-**Total Revenue** = SUM(Fact_transactions[RevenueT])
-**Avg Qnty Sold** = AVERAGE(Fact_transactions[quantity])
+       
